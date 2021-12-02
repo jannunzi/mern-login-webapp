@@ -21,7 +21,7 @@ const Profile = () => {
       credentials: 'include'
     }).then(res => navigate('/'));
   }
-  useEffect(getProfile, []);
+  useEffect(getProfile, [navigate]);
   return(
     <div>
       <h1>Profile</h1>
